@@ -5,11 +5,12 @@
   "dependencies": {
     "axios": "^0.18.0",
     "final-form": "^4.10.0",
-    "imagenation": "^2.2.2",
+    "prettier": "^1.14.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-emotion": "^9.2.10",
     "react-final-form": "^3.6.5",
+    "react-image-input": "^0.1.0",
     "react-scripts": "1.1.5"
   },
   "scripts": {
@@ -17,5 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "emotion": "^9.2.10"
   }
 }
