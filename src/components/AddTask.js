@@ -2,7 +2,6 @@ import React from "react";
 import { Form, Field } from "react-final-form";
 import styled from "react-emotion";
 import axios from "axios";
-import Imagenation from "imagenation";
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -27,9 +26,7 @@ const onSubmit = async values => {
 
 const required = value => (value ? undefined : "Required");
 
-const handleImage = imageData => {
-  console.log(imageData);
-};
+
 
 const AddTask = () => (
   <FormDiv>
@@ -69,11 +66,6 @@ const AddTask = () => (
             )}
           </Field>
 
-          <Imagenation
-            name="image"
-            scaleSize="320"
-            onImage={this.handleImage}
-          />
           <button type="submit" disabled={submitting}>
             Submit
           </button>
